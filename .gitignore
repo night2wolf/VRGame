@@ -5,6 +5,9 @@
 [Bb]uilds/
 Assets/AssetStoreTools*
 
+#Photoshop Documents
+*.psd
+
 # Visual Studio cache directory
 .vs/
 
