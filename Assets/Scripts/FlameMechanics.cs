@@ -51,6 +51,7 @@ public class FlameMechanics : MonoBehaviour
 		if (FlameStatus && e.buttonPressure <= .5f)
 		{
 			FlameObject.SetActive(true);
+			FlameStatus = false;
 		}
 	}
 

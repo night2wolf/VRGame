@@ -13,6 +13,8 @@ public class PuzzlePiece : MonoBehaviour
 		if (other.tag == "PuzzleTrigger")
 		{
 			activated();
+			Debug.Log("Activated");
+			this.transform.Find("FireRing").gameObject.SetActive(true);
 		}
 	}
 

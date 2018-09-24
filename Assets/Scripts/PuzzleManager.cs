@@ -10,7 +10,7 @@ public class PuzzleManager : MonoBehaviour
 	bool puzzleComplete = false;
 	bool temp = true;
 	public VRTK_InteractableObject InteractableObjectScript;
-	public ParticleSystem CompletionAnimation;
+	public GameObject CompletionAnimation;
 	
 	
 	
@@ -31,7 +31,7 @@ public class PuzzleManager : MonoBehaviour
 				if (temp == true) //Just write it once, please.
 				{
 					temp = false;
-					CompletionAnimation.Play(); //Particle Effect to let you know you completed it.
+					CompletionAnimation.SetActive(true); //Particle Effect to let you know you completed it.
 				}
 			}
 		}
